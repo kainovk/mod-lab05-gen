@@ -1,0 +1,19 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2268b8ba_002D8960_002D4b8a_002Dac6e_002D66ca12f0def6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SequenceGeneratorTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::4F60914B-8C7E-4F9C-BF0C-2E98052BB375::.NETCoreApp,Version=v3.0::Tests.SequenceGeneratorTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</wpf:ResourceDictionary>
