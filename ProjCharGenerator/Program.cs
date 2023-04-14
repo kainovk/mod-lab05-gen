@@ -1,45 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.IO;
 
-namespace generator
+namespace ProjCharGenerator
 {
-    class CharGenerator 
-    {
-        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
-        private char[] data;
-        private int size;
-        private Random random = new Random();
-        public CharGenerator() 
-        {
-           size = syms.Length;
-           data = syms.ToCharArray(); 
-        }
-        public char getSym() 
-        {
-           return data[random.Next(0, size)]; 
-        }
-    }
     class Program
     {
+        private const int TextLength = (int)1e3;
+        private const string RootBasePath = "../../../../";
+
         static void Main(string[] args)
         {
-            CharGenerator gen = new CharGenerator();
-            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
-            for(int i = 0; i < 1000; i++) 
+            var bigrammSequenceGenerator = new BigrammGenerator().SequenceGenerator;
+            var wordSequenceGenerator = new WordGenerator().SequenceGenerator;
+            var pairWordSequenceGenerator = new PairWordGenerator().SequenceGenerator;
+
+            RunGenerator(bigrammSequenceGenerator, RootBasePath + "bigramm.txt");
+            RunGenerator(wordSequenceGenerator, RootBasePath + "words.txt", " ");
+            RunGenerator(pairWordSequenceGenerator, RootBasePath + "pairs.txt", " ");
+        }
+
+        private static void RunGenerator(SequenceGenerator bigrammSequenceGenerator, string filePath, string sep = "")
+        {
+            WriteToFile(bigrammSequenceGenerator, TextLength, filePath, sep);
+        }
+
+        private static void WriteToFile(SequenceGenerator sequenceGenerator, int sequenceLength, string filePath,
+            string sep)
+        {
+            using var writer = new StreamWriter(filePath, false);
+            for (var i = 0; i < sequenceLength - 1; i++)
             {
-               char ch = gen.getSym(); 
-               if (stat.ContainsKey(ch))
-                  stat[ch]++;
-               else
-                  stat.Add(ch, 1); Console.Write(ch);
+                writer.Write(sequenceGenerator.GetNextStr());
+                writer.Write(sep);
             }
-            Console.Write('\n');
-            foreach (KeyValuePair<char, int> entry in stat) 
-            {
-                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
-            }
-            
+
+            writer.Write(sequenceGenerator.GetNextStr());
         }
     }
 }
-

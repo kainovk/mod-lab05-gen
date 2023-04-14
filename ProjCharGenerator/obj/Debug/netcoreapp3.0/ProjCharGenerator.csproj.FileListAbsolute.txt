@@ -1,0 +1,11 @@
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.exe
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.deps.json
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.json
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.dev.json
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfoInputs.cache
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfo.cs
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\Users\Kirill\RiderProjects\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csprojAssemblyReference.cache
